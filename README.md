@@ -1,7 +1,7 @@
 # iPro-GAN
 The python code of project iPro-GAN
-"""===============================================================================================
-The Python code of GAN to realize 1-dim feature classification. The model we used includes DCGAN 
+#===============================================================================================
+The Python code of iPro-GAN to realize 1-dim feature classification. The model we used includes DCGAN 
 and WGAN.
 ---------------------------------------------------------------------------------------------------
 Tip: None
@@ -9,4 +9,4 @@ Tip: None
 Created on Sat Dec 12 15:07:26 2020
 @author: 西电博巍(Bowei Wang)
 Version: Ultimate
-==============================================================================================="""
+#===============================================================================================
