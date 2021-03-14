@@ -1,5 +1,5 @@
-# iPro-GAN(iPro-GAN: A novel model based on generative adversarial learning
-method for identifying promoters and their strength )
+#iPro-GAN: A novel model based on generative adversarial learning
+method for identifying promoters and their strength
 ===============================================================================
 #Description
 The Python code of iPro-GAN: A novel model based on generative adversarial learning 
@@ -7,7 +7,7 @@ method for identifying promoters and their strength which realizes 1-dim featur
 classification. 
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
-#Tip: None
+#Tip: U must run MSA.m to get feature data.
 -------------------------------------------------------------------------------
 #Date
 Created on Sat Dec 12 15:07:26 2020
