@@ -5,7 +5,7 @@ import tensorflow as tf
 import numpy as np
 REGULAR_NUM = 0.0001 # regularizer number
 
-def conv2d(name, tensor, ksize, out_dim, stride=2, sted=True, padding='SAME'):
+def conv2_d(name, tensor, ksize, out_dim, stride=2, sted=True, padding='SAME'):
     with tf.variable_scope(name):
         def uniform(stdev, size):
             return np.random.uniform(low=-stdev*np.sqrt(3),
@@ -27,7 +27,7 @@ def conv2d(name, tensor, ksize, out_dim, stride=2, sted=True, padding='SAME'):
         b = tf.get_variable('bias', [out_dim], 'float32', initializer=tf.constant_initializer(0.))
         return tf.nn.bias_add(var, b)
 
-def conv1d(name, tensor, ksize, out_dim, stride=2, sted=True, padding='SAME'):
+def conv1_d(name, tensor, ksize, out_dim, stride=2, sted=True, padding='SAME'):
     with tf.variable_scope(name):
         def uniform(stdev, size):
             return np.random.uniform(low=-stdev*np.sqrt(3),
@@ -48,7 +48,7 @@ def conv1d(name, tensor, ksize, out_dim, stride=2, sted=True, padding='SAME'):
         return tf.nn.bias_add(var, b)
 
 
-def deconv2d(name, tensor, ksize, outshape, stride=2, sted=True, padding='SAME'):
+def deconv2_d(name, tensor, ksize, outshape, stride=2, sted=True, padding='SAME'):
     with tf.variable_scope(name):
         def uniform(stdev, size):
             return np.random.uniform(low=-stdev*np.sqrt(3),
@@ -71,7 +71,7 @@ def deconv2d(name, tensor, ksize, outshape, stride=2, sted=True, padding='SAME')
         b = tf.get_variable('bias', [outshape[-1]], 'float32', initializer=tf.constant_initializer(0.))
         return tf.nn.bias_add(var, b)
 
-def deconv1d(name, tensor, ksize, outshape, stride=4, sted=True, padding='SAME'):
+def deconv1_d(name, tensor, ksize, outshape, stride=4, sted=True, padding='SAME'):
     with tf.variable_scope(name):
         def uniform(stdev, size):
             return np.random.uniform(low=-stdev*np.sqrt(3),
@@ -93,7 +93,7 @@ def deconv1d(name, tensor, ksize, outshape, stride=4, sted=True, padding='SAME')
         b = tf.get_variable('bias', [outshape[-1]], 'float32', initializer=tf.constant_initializer(0.))
         return tf.nn.bias_add(var, b)
 
-def fc(name,value, output_shape):
+def f_c(name,value, output_shape):
     with tf.variable_scope(name, reuse=None):
         shape = value.get_shape().as_list()
         def uniform(stdev, size):
