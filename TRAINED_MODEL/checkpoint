@@ -1,0 +1,2 @@
+model_checkpoint_path: "G:\\QHJ2.0/TRAINED_MODEL\\model.ckpt"
+all_model_checkpoint_paths: "G:\\QHJ2.0/TRAINED_MODEL\\model.ckpt"
