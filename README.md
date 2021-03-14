@@ -11,7 +11,7 @@ classification.
 -------------------------------------------------------------------------------
 #Date
 Created on Sat Dec 12 15:07:26 2020
-#@author: 西电博巍 (Bowei Wang)
+#@author: 西电博巍 (Bowei Wang) n' 乔慧娟(Huijuan Qiao)
 #Version: Ultimate
 -------------------------------------------------------------------------------
 # usage 
